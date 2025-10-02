@@ -13,20 +13,20 @@
 <body>
 
     <section class="sm:bg-[#030712] h-auto bg-gray-700">
-        <nav class="flex sm:flex justify-between items-center px-16 p-4">
+        <nav class="flex sm:flex justify-between items-center sm:px-16 p-4">
             <div>
                 <img src="./Accets/Logo.png" alt="">
             </div>
-            <div class="gap-4 sm:flex hidden items-center">
-                <a class="text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
+            <div id="mobileMenu" class="gap-4 sm:flex hidden items-center">
+                <a class="nav-link text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
                     href="#">Home</a>
-                <a class="text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
+                <a class="nav-link text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
                     href="#About">About</a>
-                <a class="text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
-                    href="#">Projects</a>
-                <a class="text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
-                    href="#">Services</a>
-                <a class="text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
+                <a class="nav-link text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
+                    href="#Projects">Projects</a>
+                <a class="nav-link text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
+                    href="#Skills">Skills & Experties</a>
+                <a class="nav-link text-[#D1D5DB] text-medium text-[16px] hover:text-white hover:border-b-red-600   hover:border-b-2  hover:font-bold"
                     href="#">Contact</a>
                 <div class="flex gap-2 px-1">
                     <img class="h-[36px] w-[36px ]" src="./Accets/Icon Button.png" alt="">
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class=" flex ml-32 fill-white sm:hidden lg:hidden ">
-                <button><img src="./Accets/nav menu (1).png" alt=""></button>
+                <button   id="menuBtn"><img src="./Accets/nav menu (1).png" alt=""></button>
             </div>
         </nav>
     </section>
@@ -44,7 +44,7 @@
         <div class="flex justify-center sm:justify-between items-center lg:flex-row flex-col gap-8 md:px-16">
             <div class="sm:pl-0 pl-8 ">
                 <h1 class="font-bold text-[#F9FAFB] text-[40px] pt-3">Hi, I’m Syed Saad Raza 👋</h1>
-                <p class="text-[#D1D5DB] font-normal text-[10px] sm:block hidden sm:text-[16px]/[24px] pt-3">I’m a
+                <p class="text-[#D1D5DB] font-normal text-[10px] sm:text-[16px]/[24px] pt-3">I’m a
                     passionate Frontend
                     Developer with 2 years of experience <br> in building responsive and modern
                     websites using HTML, CSS, <br> Tailwind CSS, and JavaScript. I love creating clean, user-friendly
@@ -72,8 +72,8 @@
                 </div>
             </div>
             <div class="ml-0">
-                <img class="sm:h-[320px] sm:w-[280px] sm:block hidden w-fit shadow-2xl shadow-gray-900 object-cover rounded-xl sm:rounded-4xl"
-                    src="./Accets/WhatsApp Image 2025-09-29 at 6.47.51 AM.jpeg" alt="">
+                <img class="sm:h-[320px] sm:w-[280px] w-fit shadow-2xl shadow-gray-900 object-cover rounded-xl sm:rounded-4xl"
+                    src="./Accets/About 1 My img.jpeg" alt="">
 
             </div>
         </div>
@@ -86,12 +86,11 @@
         <h1 class="text-center text-[#D1D5DB] font-bold text-[24px]">About Me</h1>
         <div class="flex lg:flex-row flex-col-reverse gap-8 md:gap-36 justify-around items-center">
             <div class="w-fit sm:w-1/3 mt-5">
-                <img class="w-[460px] h-[520px] object-cover rounded-4xl "
-                    src="./Accets/WhatsApp Image 2025-09-29 at 6.47.52 AM.jpeg" alt="">
+                <img class="w-[460px] h-[520px] object-cover rounded-4xl " src="./Accets/About2 My img.jpeg" alt="">
 
             </div>
             <div class="sm:w-1/3 sm:pt-0 pt-4 px-1">
-                <p class="text-[#D1D5DB] font-normal text-[16px]/[24px ]">I am a dedicated Frontend Developer with 2
+                <p class="text-[#D1D5DB] font-normal text-[12px] sm:text-[16px]/[24px ]">I am a dedicated Frontend Developer with 2
                     years of hands-on experience in crafting professional,
                     responsive, and visually appealing websites. My expertise includes HTML, CSS, Tailwind CSS, and
                     JavaScript, with a strong focus on delivering pixel-perfect designs and smooth user experiences.
@@ -114,8 +113,20 @@
         <br>
     </section>
 
-    <section class="sm:bg-[#030712] h-auto bg-gray-700 pt-10 md:pt-34">
-        <div class="flex md:flex-row flex-col justify-center items-center gap-14">
+    <section id="Skills" class="sm:bg-[#030712] h-auto bg-gray-700">
+        <div class="flex justify-center">
+            <button class="sm:bg-[#374151] bg-[#030712] text-[#D1D5DB]  font-semibold py-2 px-2 rounded-full my-10">My
+                Skills &
+                Expertise</button>
+        </div>
+        <p class="text-[#D1D5DB] text-center text-[16px]/[24px] sm:block hidden">With hands-on experience in front-end
+            technologies like
+            HTML, CSS, JavaScript, TailwindCSS, Bootstrap, and
+            React, <br> I specialize in building responsive, interactive, and scalable web applications. Alongside
+            strong
+            UI/UX design skills in <br> Figma and version control expertise with Git, I bring together creativity and
+            technical precision to craft professional digital solutions</p>
+        <div class="flex md:flex-row flex-col justify-center items-center gap-14 pt-10 md:pt-20">
             <div>
                 <img class="h-[64px] w-[64px] object-cover" src="./Accets/html.png" alt="">
                 <p class="text-[#D1D5DB] text-[18px]/[28px] text-center font-normal pt-1">HTML</p>
@@ -156,7 +167,107 @@
                 <p class="text-[#D1D5DB] text-[18px]/[28px] text-center font-normal pt-1">Figma</p>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
     </section>
-</body>
+    <section id="Projects" class="bg-[#111827] w-full h-auto">
+        <div class="flex justify-center">
+            <button class="sm:bg-[#374151] bg-[#030712] text-[#D1D5DB]  font-semibold py-2 px-3 rounded-full my-10">My
+                Projects</button>
+        </div>
+        <p class="text-[#D1D5DB] text-center text-[16px]/[24px] sm:block hidden">Here are some of the projects I’ve
+            worked on, showcasing my skills in web development, design, <br> and
+            problem-solving. Each project reflects my ability to transform ideas into functional, user-friendly
+            solutions</p>
+        <div
+            class="mt-10 md:mt-20 flex lg:flex-row  md:justify-evenly items-center justify-center md:gap-2 gap-10   lg:px-4 flex-col">
+            <div class="bg-white shadow-xl h-[350px] overflow-hidden w-[320px] rounded-2xl">
+                <img class="w-full h-[200px] object-cover" src="./Accets/todo.jpg" alt="">
+                <h1 class="text-black font-bold px-2 pt-2">To-Do List Applications</h1>
+                <p class="text-[#4c94ff]  font-semibold text-[12px] px-2 pt-1">Developed a To-Do List App using HTML,
+                    CSS, and JavaScript with a responsive UI.
+                    Supports adding, editing, and deleting tasks
+                </p>
+                <div class="flex gap-3 items-center py-3 px-1">
+                    <a target="_blank" href=""><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Live
+                            Demo</button></a>
+                    <a target="_blank" href="https://github.com/Syed-Saad1/To-Do-List.git"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Source
+                            Code</button></a>
+                </div>
+            </div>
+            <div class="bg-white shadow-2xl h-[350px] w-[320px] overflow-hidden  rounded-2xl">
+                <img class="w-full h-[200px] object-contain" src="./Accets/calculator.png" alt="">
+                <h1 class="text-black font-bold px-2 pt-2">Calculator Applications</h1>
+                <p class="text-[#4c94ff]  font-semibold text-[12px] px-2 pt-1">Created a Calculator App using HTML, CSS,
+                    and JavaScript with a simple responsive UI.
+                    Performs basic arithmetic operations smoothly,.</p>
+                <div class="flex gap-3 items-center py-3 px-1">
+                    <a target="_blank" href="https://syed-saad1.github.io/Js-Calculator-Application/"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Live
+                            Demo</button></a>
+                    <a target="_blank" href="https://github.com/Syed-Saad1/Js-Calculator-Application.git"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Source
+                            Code</button></a>
+                </div>
+            </div>
+            <div class="bg-white shadow-2xl h-[350px] w-[320px] overflow-hidden  rounded-2xl">
+                <img class="w-full h-[200px] object-contain" src="./Accets/Medical Recover" alt="">
+                <h1 class="text-black font-bold px-2 pt-2">Medical recovery</h1>
+                <p class="text-[#4c94ff]  font-semibold text-[12px] px-2 pt-1">Built a fully responsive Medical Recovery
+                    website using HTML and Tailwind CSS.
+                    Focused on clean design and mobile-friendly layout to enhance user experience.</p>
+                <div class="flex gap-3 items-center py-3 px-1">
+                    <a target="_blank" href="https://syed-saad1.github.io/In-Gatekod-Project-02/"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Live
+                            Demo</button></a>
+                    <a target="_blank" href="https://github.com/Syed-Saad1/In-Gatekod-Project-02.git"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Source
+                            Code</button></a>
+                </div>
+            </div>
+            <!-- <div class="bg-white shadow-2xl h-[350px] w-[320px] overflow-hidden  rounded-2xl">
+                <img class="w-full h-[200px] object-contain" src="./Accets/Medical Recover" alt="">
+                <h1 class="text-black font-bold px-2 pt-2">Pizza Time</h1>
+                <p class="text-[#4c94ff]  font-semibold text-[12px] px-2 pt-1"> Developed a fully responsive Pizza Time
+                    website using HTML and Tailwind CSS.
+                    Emphasized modern design and user-friendly layout </p>
+                <div class="flex gap-3 items-center py-3 px-1">
+                    <a target="_blank" href="https://syed-saad1.github.io/In-Gatekod-Project-01/"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Live
+                            Demo</button></a>
+                    <a target="_blank" href="https://github.com/Syed-Saad1/In-Gatekod-Project-01.git"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Source
+                            Code</button></a>
+                </div>
+            </div>
+        </div> -->
+            <div class="bg-white shadow-2xl h-[350px] w-[320px] overflow-hidden rounded-2xl">
+                <img class="w-full h-[200px] object-contain" src="./Accets/nguessing.png" alt="">
+                <h1 class="text-black font-bold px-2 pt-2">Number-Guessing-Game</h1>
+                <p class="text-[#4c94ff]  font-semibold text-[12px] px-2 pt-1">Created an interactive Number Guessing
+                    Game
+                    using HTML and JavaScript.
+                    Features real-time feedback and simple logic to enhance user engagement. </p>
+                <div class="flex gap-3 items-center py-3 px-1">
+                    <a target="_blank" href="https://syed-saad1.github.io/Js-Number-Gassing-Game/"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Live
+                            Demo</button></a>
+                    <a target="_blank" href="https://github.com/Syed-Saad1/Js-Number-Gassing-Game.git"><button
+                            class=" border-2 border-black hover:bg-gray-600 hover:text-white rounded-full text-gray-600 font-bold px-3 py-2">Source
+                            Code</button></a>
+                </div>
+            </div>
 
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+</body>
+<script src="./app.js"></script>
 </html>
