@@ -575,6 +575,11 @@
       background-color: #030712;
     }
   }
+  .sm\:bg-\[\#111827\] {
+    @media (width >= 40rem) {
+      background-color: #111827;
+    }
+  }
   .sm\:bg-\[\#374151\] {
     @media (width >= 40rem) {
       background-color: #374151;
